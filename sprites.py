@@ -96,7 +96,7 @@ class Player(Sprite):
         # check pixel below
         self.rect.y += 2
         hits = pg.sprite.spritecollide(self, self.game.platforms, False)
-        hits = pg.sprite.spritecollide(self, self.game.mlatforms, False)
+        hits = pg.sprite.spritecollide(self, self.game.platforms, False)
         # adjust based on checked pixel
         self.rect.y -= 2
         # only allow jumping if player is on platform
